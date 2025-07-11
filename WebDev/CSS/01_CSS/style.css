@@ -1,0 +1,21 @@
+body{
+    background-color: pink;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}   
+
+p {
+    line-height: 1.5;
+    margin: 20px;
+}   
