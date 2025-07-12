@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-ar;
+    align-items: center;
+    padding: 1px 30px;
+    background-color: #0088FE;
+}
+
+.menu-item {
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu-links {
+    display: flex;
+    gap: 40px;
+    margin-left: 550px;
+    
+}
+
+.menu-links div:hover{
+    color:black;
+    
+}
