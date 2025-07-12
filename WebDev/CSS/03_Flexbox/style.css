@@ -1,0 +1,59 @@
+/** ------------------------------------- -->
+/**  FLEXBOX IN CSS
+/** ---------------------------------------- --> */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Urbanist", sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: hsl(0, 0%, 96%);
+
+}
+
+#main-heading {
+    font-size: 6.2rem;
+    color: #1e1403;
+    margin: 3rem 0;
+}
+
+.item {
+    font-size: 20px;
+    background-color: green;
+    min-width: 150px;
+    height: 100px;
+    padding: 10px 10px;
+    display: grid;
+    place-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.flex-container {
+    width: 60%;
+    height: auto;
+    padding: 50px 0;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    background: linear-gradient(to right, #514a9d, #24c6dc);
+    color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+
+    align-content: center;
+    flex-wrap: wrap;
+}
