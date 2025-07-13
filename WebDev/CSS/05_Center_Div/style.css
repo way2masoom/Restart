@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    background-color: #191825;
+
+    /* 1st way to center the DIV  */
+    /* position: relative; */
+
+    /* 2nd Using flex box  */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    /* 3rd ways  */
+    /* display: grid;
+    place-items:center; */
+
+    /* 4th way  */
+    display: flex;
+}
+
+.child{
+    width: 400px;
+    height: 400px;
+    background-color: #865dff;
+    font-size: 25px;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* 1st way to center the DIV  */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%); */
+
+    /* 4th way  */
+    margin:auto;
+
+    
+
+}
