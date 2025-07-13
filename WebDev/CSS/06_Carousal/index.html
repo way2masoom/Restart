@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousal design</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+
+        }
+        html{
+            font-size: 63.5%;
+        }
+
+        h2{
+            font-size: 35px;
+            color: #083D77;
+        }
+
+        .container-img{
+            width: 60vw;
+            height: 50rem;
+            box-shadow: rgb(100,100,11,0.2),0px 7px 29px 0px;
+            border-radius: 2rem;
+
+            animation: gallery 15s linear infinite;
+        }
+
+        @keyframes gallery {
+            0%{
+                background-image: url(./images/image1.jpg);
+            }
+            20%{
+                background-image: url(./images/images-2.jpg);
+            }
+
+            40%{
+                background-image: url(https://cdn.pixabay.com/photo/2019/02/18/21/26/dimorphoteca-ecklonis-4005565_1280.jpg);
+            }
+
+            60%{
+                background-image: url(https://cdn.pixabay.com/photo/2011/06/29/15/46/garden-8211_1280.jpg);
+            }
+
+            80%{
+                background-image: url(https://cdn.pixabay.com/photo/2016/09/04/12/11/dahlia-1643808_1280.jpg);
+            }
+
+            100%{
+                background-image: url(./images/image-4.jpg);
+            }
+            
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h2>Carousal Effect</h2>
+
+    <div class="container-img"></div>
+</body>
+</html>
