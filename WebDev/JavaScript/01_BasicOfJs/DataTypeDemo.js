@@ -8,3 +8,12 @@ let ProductName="Iphone 17 Pro max(256 Gb Black )"
 let isAvailable=true; 
 
 console.log(`${ProductName} price is = ${productPrice} with ${DiscountAmount}% Discount `);
+
+// Null and data type
+
+let x;
+console.log(x); // Undefined are done automatically by Js
+
+let y=null;
+console.log(y); // Null value should be define by the User/Developer
+
