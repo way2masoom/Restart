@@ -27,6 +27,8 @@ console.log(n);
 let user=undefined;
 console.log(user);
 
+let user2;
+console.log(user2);
 
 
 
