@@ -24,5 +24,9 @@ console.log(z);
 let n=990000937798298762947829982300924390n; // BigInt as the values have n at the last
 console.log(n); 
 
+let user=undefined;
+console.log(user);
+
+
 
 
