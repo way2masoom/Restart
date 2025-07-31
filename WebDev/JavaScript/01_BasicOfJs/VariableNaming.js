@@ -9,7 +9,7 @@ console.log(first_name + " " +last_name);
 let iam$user='alam';
 console.log(user);
 
-// we can used number after the variable name not at begining 
+// we can used number after the variable name not at beginning 
 var user2=undefined;
 let user1='rohit'
 
