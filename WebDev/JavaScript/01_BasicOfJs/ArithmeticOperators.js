@@ -1,9 +1,6 @@
-// Assignment Operator 
+// Arithmetic operas are  + , - , /, * 
 
-let a=30;
-let b=40;
-
-let sum=a+b; // plus = is the assignment operator
+let sum=a+b; // plus + is the assignment operator
 console.log("Addition = "+sum);
 
 let sub=a-b;
@@ -17,4 +14,3 @@ console.log("Divide operator = "+divide);
 
 let power=2**3;
 console.log("Power operator = "+power);
-
