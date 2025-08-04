@@ -8,5 +8,11 @@ function greetingToEveryOne(){
     
 }
 
+function hello(){
+    console.log("Hello World");
+}
+
 // Function call
 greetingToEveryOne();
+
+hello();
