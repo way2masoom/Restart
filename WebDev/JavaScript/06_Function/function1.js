@@ -1,6 +1,6 @@
 // basic of Function
 
-// Function decleration
+// Function deceleration
 function greetingToEveryOne(){
     console.log("My logic line 1");
     console.log("My logic line 2");
