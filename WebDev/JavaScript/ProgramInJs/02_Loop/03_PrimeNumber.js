@@ -9,13 +9,12 @@ function isPrime(number) {
     for (let i = 2; i < number - 1; i += 1) {
         if (number % i == 0) {
             return false;
-        } else {
-            return true
-        }
+        } 
     }
+    return true;
 }
 
-const PrimeNumber = isPrime(5);
+const PrimeNumber = isPrime(2);
 
 if (PrimeNumber == true) {
     console.log("Yes it's prime number");
