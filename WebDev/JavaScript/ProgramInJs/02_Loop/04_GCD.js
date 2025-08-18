@@ -25,3 +25,15 @@ const num2 = 18;
 
 // Print result in a formatted string
 console.log(`GCD of ${num1} and ${num2} is ${gcd(num1, num2)}`);
+
+/*
+
+Numbers: 48 and 18
+Factors of 48 → 1, 2, 3, 4, 6, 8, 12, 16, 24, 48
+Factors of 18 → 1, 2, 3, 6, 9, 18
+Common factors → 1, 2, 3, 6
+✅ HCF / GCD = 6
+
+*/
+
+
