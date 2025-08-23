@@ -3,7 +3,7 @@
 console.log("Js is Interpreter Language");
 
 function fun(){
-    le x=5
+    le x=5 // Syntax Error
     console.log(x);
 }
 
