@@ -4,4 +4,4 @@
 }
 let x=10;
 
-// console.log(message); // Uncaught ReferenceError: message is not defined
+// console.log(message); // Uncaught ReferenceError: message is not defined 
