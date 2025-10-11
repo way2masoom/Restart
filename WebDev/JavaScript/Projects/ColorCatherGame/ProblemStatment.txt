@@ -1,0 +1,14 @@
+Problem Statement:
+You have to create a game in JavaScript called 'Colour Catcher'. A grid of coloured squares appears on the screen. 
+A target colour is shown. The user has to click the correct colour as quickly as possible. Each correct click earns a point. 
+You can set a timer (like 30 seconds) to make it a challenge!.
+
+Create following features:
+1. Display a grid of random colours
+2. Highlight a target colour to find
+3. Score increases on correct click
+4. Timer countdown
+5. Game ends with final score display
+
+Optional:
+Provide an option to select between dark and light theme to the user.
