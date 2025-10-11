@@ -14,7 +14,30 @@ const scoreDisplay = document.getElementById("score")
 // Function to Generate the random colors
 function getRandomColors() {
 
-}  
+}
+
+// ShuffleArray for colors to position Randomly 
+function shuffleArray(colors) {
+
+}
+
+
+// Grid Function to Arrange the color in Grid form
+function createGrid() {
+    grid.innerHTML = "";
+    colors = shuffleArray(colors);
+    targetColor = colors[Math.floor(Math.random()) * 16];
+    targetColorDisplay.textContent = targetColor;
+    colors.forEach((color) => {
+        const box = document.createElement("div");
+        box.className = "color-box";
+        box.style.backgroundColor = color;
+        box.addEventListener('click', () => { 
+            handleClick(color); 
+        })
+        grid.appendChild(box);
+    })
+}
 
 // Function to Start Game 
 function startGame() {
@@ -22,16 +45,16 @@ function startGame() {
     time = 30;
     scoreDisplay.textContent = score;
     timeDisplay.textContent = time;
-    
+
     // Function to create the Grid of colors
     createGrid();
     clearInterval(timer);
-    timer=setInterval(()=>{
+    timer = setInterval(() => {
         time--;
-        timeDisplay.textContent=time;
-        if(time===0){
+        timeDisplay.textContent = time;
+        if (time === 0) {
             clearInterval(timer);
-            alert("⌛ Time's Up! and your final Score : "+score)
+            alert("⌛ Time's Up! and your final Score : " + score)
         }
-    },1000);
+    }, 1000);
 }
