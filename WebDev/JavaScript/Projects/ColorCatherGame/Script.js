@@ -14,7 +14,7 @@ const scoreDisplay = document.getElementById("score")
 // Function to Generate the random colors
 function getRandomColors() {
 
-}
+}  
 
 // Function to Start Game 
 function startGame() {
@@ -23,5 +23,15 @@ function startGame() {
     scoreDisplay.textContent = score;
     timeDisplay.textContent = time;
     
+    // Function to create the Grid of colors
     createGrid();
+    clearInterval(timer);
+    timer=setInterval(()=>{
+        time--;
+        timeDisplay.textContent=time;
+        if(time===0){
+            clearInterval(timer);
+            alert("⌛ Time's Up! and your final Score : "+score)
+        }
+    },1000);
 }
