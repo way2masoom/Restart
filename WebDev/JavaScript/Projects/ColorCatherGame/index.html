@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Cather Game</title>
-</head>
-<body>
-    <h1>Color Cather Game</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Cather Game</title>
+
+        <!-- Linking CSS  -->
+         <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <!-- for dark and light mode  -->
+        <div class="mode"></div>
+
+        <!-- main container -->
+        <div class="game-container">
+            <h1>🎯 Color Cather Game</h1>
+            <p>Click On : <span id="target-color">#</span></p>
+
+            <!-- color will be here  -->
+            <div id="grid" class="color-grid"></div>
+
+            <p>⌛ Time Left : <span id="time">30</span>Sec</p>
+            <p>🏅 Score: <span id="score">0</span></p>
+
+            <button onclick="startGame()">StartGame</button>
+
+
+        </div>
+
+        <!-- Linking Script/Js file  -->
+        <script src="Script.js"></script>
+    </body>
 </html>
