@@ -17,3 +17,24 @@ body{
     border-radius: 20px;
     box-shadow: 0 0 15px black;
 }
+
+.color-box {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    transition: transform 0.2s;
+}
+
+.color-box:hover {
+    transform: scale(1.1);
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+    margin-top: 20px;
+}
