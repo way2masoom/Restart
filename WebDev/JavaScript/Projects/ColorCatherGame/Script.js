@@ -9,6 +9,7 @@ const grid = document.getElementById("grid");
 const targetColorDisplay = document.getElementById("target-color");
 const timeDisplay = document.getElementById("time")
 const scoreDisplay = document.getElementById("score")
+const messageDisplay = document.getElementById("message");
 
 
 // ShuffleArray for colors to position Randomly 
@@ -34,19 +35,34 @@ function createGrid() {
         box.className = "color-box";
         box.style.backgroundColor = color;
         box.addEventListener('click', () => {
-            handleClick(color);
+            handleColorClick(color);
         })
         grid.appendChild(box);
     })
 }
 
 // Handel Click Function to Match the color with target color
-function handleClick(clickedColor) {
-    if (clickedColor === targetColor) {
+// function handleClick(clickedColor) {
+//     if (clickedColor === targetColor) {
+//         score++;
+//         scoreDisplay.textContent = score;
+//         createGrid();
+//     }
+// }
+
+function handleColorClick(selectedColor) {
+    if (selectedColor === targetColor) {
         score++;
-        scoreDisplay.textContent = score;
+        messageDisplay.textContent = "✅ Correct!";
+        messageDisplay.style.color = "green";
         createGrid();
+    } else {
+        messageDisplay.textContent = "❌ Wrong!";
+        messageDisplay.style.color = "red";
     }
+
+    scoreDisplay.textContent = score;
+    setTimeout(() => (messageDisplay.textContent = ""), 800); // clear message after 0.8 sec
 }
 
 // Function to Start Game 
