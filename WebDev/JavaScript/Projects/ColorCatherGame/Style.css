@@ -2,20 +2,56 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #f0f0f0;
-    text-align: center;
+/* Background */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #2d3436;
 }
 
-.game-container{
-    max-width: 600px;
-    background-color: #ffff;
-    text-align: center;
-    margin: auto;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 15px black;
+h1 {
+  background: linear-gradient(90deg, #6c5ce7, #fd79a8, #00cec9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+
+
+/* Game Card */
+.game-container {
+  background-color: #fff;
+  width: 90%;
+  max-width: 480px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Title */
+.game-container h1 {
+  font-size: 1.8rem;
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+/* Instructions */
+.instruction {
+  font-size: 1.1rem;
+  color: #6c5ce7;
+  margin-bottom: 15px;
+}
+
+#target-color {
+  font-weight: bold;
+  color: #d63031;
 }
 
 .color-box {
@@ -28,7 +64,8 @@ body{
 }
 
 .color-box:hover {
-    transform: scale(1.1);
+  transform: scale(1.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .color-grid {
@@ -37,4 +74,72 @@ body{
     gap: 10px;
     justify-items: center;
     margin-top: 20px;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  color: #2d3436;
+  margin-top: 10px;
+}
+
+/* Button */
+#start-btn {
+  background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 12px 25px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#start-btn:hover {
+  background: linear-gradient(135deg, #5f27cd, #9980fa);
+  transform: scale(1.05);
+}
+
+#start-btn:active {
+  transform: scale(0.95);
+}
+
+/* Game over popup  */
+.popup {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+.popup.hidden { display: none; }
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+
+
+/* Responsive */
+@media (max-width: 500px) {
+  .color-box {
+    width: 50px;
+    height: 50px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 5px;
+  }
 }

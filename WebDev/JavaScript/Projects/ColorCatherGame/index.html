@@ -15,15 +15,26 @@
         <!-- main container -->
         <div class="game-container">
             <h1>🎯 Color Cather Game</h1>
-            <p>Click On : <span id="target-color">#</span></p>
-
+            <p class="instruction">Click on the color: <span
+                    id="target-color">#</span></p>
             <!-- color will be here  -->
             <div id="grid" class="color-grid"></div>
 
-            <p>⌛ Time Left : <span id="time">30</span>Sec</p>
-            <p>🏅 Score: <span id="score">0</span></p>
+            <div class="stats">
+                <p>⌛ Time Left: <span id="time">30</span> sec</p>
+                <p>🏅 Score: <span id="score">0</span></p>
+            </div>
 
-            <button onclick="startGame()">StartGame</button>
+            <!-- game over popup  -->
+            <div id="popup" class="popup hidden">
+                <div class="popup-content">
+                    <h2>⌛ Time’s Up!</h2>
+                    <p>Your final score: <span id="final-score"></span></p>
+                    <button onclick="startGame()">Play Again</button>
+                </div>
+            </div>
+
+            <button id="start-btn" onclick="startGame()">StartGame</button>
 
         </div>
 
