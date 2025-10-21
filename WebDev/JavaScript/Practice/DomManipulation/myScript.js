@@ -19,8 +19,14 @@ b.style.color="blue";
 let c=document.getElementsByClassName("para")
 c[1].style.backgroundColor="#444";
 
-document.body.style.backgroundColor="#ff3";
-document.body.style.color="blue";
+document.body.style.backgroundColor="#fff";
+document.body.style.color="Red";
 
+// Adding a New Element in HTML
+let newElement=document.createElement("h2");
+newElement.innerText=   "Hello, I am New Element";
+document.body.appendChild(newElement);
 
-
+// Removing the element
+let removeElement=document.getElementsByTagName("h1") [1];
+removeElement.remove();
