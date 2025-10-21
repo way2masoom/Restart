@@ -12,3 +12,15 @@ console.log(a.textContent);
 console.log(a.innerText);
 
 
+//Changing Style 
+let b=document.querySelector(".para1");
+b.style.color="blue";
+
+let c=document.getElementsByClassName("para")
+c[1].style.backgroundColor="#444";
+
+document.body.style.backgroundColor="#ff3";
+document.body.style.color="blue";
+
+
+
