@@ -141,9 +141,9 @@ Feel free to:
 ## 📫 Connect With Me
 
 - GitHub: [@way2masoom](https://github.com/way2masoom)
-- LinkedIn: [Add your LinkedIn]
-- Twitter: [Add your Twitter]
-- Portfolio: [Add your portfolio]
+- LinkedIn: [https://www.linkedin.com/in/way2masoom]
+- Twitter: [https://x.com/way2masoom]
+- Portfolio: [https://www.linkedin.com/in/way2masoom]
 
 ---
 
