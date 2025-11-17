@@ -36,7 +36,7 @@ class Product{
 }
 
 // Creating objects using constructor
-const product1=new Product("Iphone 16 Pro",120000,"Best Phone","5.2");
-console.log(product1);
+const iphone=new Product("Iphone 16 Pro",120000,"Best Phone","5.2");
+console.log(iphone);
 
 product1.addToCart();
