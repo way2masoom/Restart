@@ -1,4 +1,4 @@
-// Comprision Operators in JavaScript
+// Comparison Operators in JavaScript
 
 console.log(10>5); // true
 console.log(8>=8); // true
