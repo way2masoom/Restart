@@ -3,7 +3,7 @@
 // but we can also create out own Constructor
 
 // Constructor demo
-class Product{
+class Product {
     // defining the product 
     name;
     price;
@@ -11,32 +11,31 @@ class Product{
     ratting;
 
     // Members function
-    constructor(name,price,description,ratting){
-        this.name=name;
-        this.price=price;
-        this.description=description;
-        this.ratting=ratting;
+    constructor(name, price, description, ratting) {
+        this.name = name;
+        this.price = price;
+        this.description = description;
+        this.ratting = ratting;
     }
 
     // Buy the product
-    buyProduct(){
+    buyProduct() {
         console.log("Buying the product");
     }
 
-    addToCart(){
+    addToCart() {
         console.log("Adding to the Cart");
-        
     }
 
-    removeCart(){
+    removeCart() {
         console.log("Removing the product from the cart");
-        
+
     }
 
 }
 
 // Creating objects using constructor
-const iphone=new Product("Iphone 16 Pro",120000,"Best Phone","5.2");
+const iphone = new Product("Iphone 16 Pro", 120000, "Best Phone", "5.2");
 console.log(iphone);
 
-product1.addToCart();
+iphone.addToCart();
