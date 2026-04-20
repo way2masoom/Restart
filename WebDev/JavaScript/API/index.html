@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dog Api</title>
+        <style>
+        
+          *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #f5deb3, #ffe4c4);
+    height: 100vh;
+
+    /* CENTER EVERYTHING */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTAINER STYLING */
+.container{
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* IMAGE STYLING */
+img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+img:hover{
+    transform: scale(1.05);
+}
+
+/* BUTTON STYLING */
+button{
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+button:hover{
+    background: #218838;
+    transform: scale(1.05);
+}
+
+button:active{
+    transform: scale(0.95);
+}
+h3{
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+        
+    </style>
+
+    </head>
+    <body>
+
+        <div class="container">
+            <h3>Get A Random Dog Imag Using DogAPI</h3>
+            <img src="https://dog.ceo/api/breeds/image/random" alt>
+
+            <button>Get Random image</button>
+        </div>
+        <script src="dogApi.js"></script>
+    </body>
+</html>
