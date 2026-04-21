@@ -1,5 +1,5 @@
 // creating an object
-const obj1 = {
+const product = {
     name: "iphone 19 pro",
     price: 19764,
     category: "phones",
@@ -7,16 +7,16 @@ const obj1 = {
 };
 
 // Destructuring: extracting values into variables
-const { name, price, category, description } = obj1;
+const { name, price, category, description } = product;
 console.log("Name :", name, "Price :", price, "Category :", category, "Description :", description);
 
 // Creating another object
-const obj2 = {
+const product2 = {
     name: "iphone",
     price: 100000
 };
 
 // Renaming variables while destructuring
-const { name: productName, price: productPrice } = obj2;
+const { name: productName, price: productPrice } = product2;
 
-console.log("Name: ", productName, "Price : ", productPrice);
+console.log(productName, productPrice); 
