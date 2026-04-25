@@ -27,4 +27,4 @@ const { name, price, brand, stock = "Available" } = updated;
 console.log("Combined:", combined);
 console.log("Clone:", clone);
 console.log("Updated:", updated);
-console.log("Destructured:", name, price, brand, stock);
+console.log("Destructured:", name, price, brand, stock); 
