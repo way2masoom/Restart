@@ -109,3 +109,15 @@ async function getAllUser() {
 }
 
 getAllUser();
+
+
+// feathing api using .then() and .catch()
+
+fetch('https://jsonplaceholder.typicode.com/todos/')
+    .then((response) => {
+        return response.json()
+    }).then((data) => {
+        console.log(data);
+    }).catch(() => {
+        console.log("Error", error);
+    })
